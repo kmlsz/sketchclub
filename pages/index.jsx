@@ -23,7 +23,7 @@ export default class Index extends Component {
           </div>
 
           <div className="main-container-title">
-            <h1>Alchemy</h1>
+            <h1>Sketchclub</h1>
           </div>
 
           <div className="main-container-subtitle">
