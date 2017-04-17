@@ -1,6 +1,6 @@
 ---
 title: "Premium"
-layout: page
+layout: premium
 author: "Kamil"
 path: "/premium/"
 img: "https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/DfOmbJEkSbu9rbJ1x5i4"
