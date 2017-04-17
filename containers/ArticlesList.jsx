@@ -5,9 +5,9 @@ import uuid from 'node-uuid';
 import moment from 'moment';
 import _ from 'lodash';
 
-import Plugin from './Plugin';
+import Article from '../components/Article';
 
-class PluginsList extends React.Component {
+class ArticlesList extends React.Component {
   componentWillMount() {
     if (typeof window !== 'undefined') {
       const body = document.getElementsByTagName('body');
@@ -27,7 +27,7 @@ class PluginsList extends React.Component {
   renderPosts(route) {
     const posts = [];
     route.pages.map((page) => {
-      if (page.data.layout === 'plugin') {
+      if (page.data.layout === 'post') {
         posts.push(page);
       }
     });
@@ -37,7 +37,7 @@ class PluginsList extends React.Component {
     }).reverse();
 
     return ordered.map((orderedPost) => {
-      return <Plugin key={uuid()} data={orderedPost.data} />;
+      return <Article key={uuid()} data={orderedPost.data} />;
     });
   }
   render() {
@@ -46,8 +46,8 @@ class PluginsList extends React.Component {
 
     return (
       <div>
-        <div className="plugins-list">
-          <div className="plugins-list-container">
+        <div className="articles-list">
+          <div className="articles-list-container">
             <Link to={prefixLink('/')}>
               <div className="logo fixed">
                 <div className="logo-outerCircle">
@@ -58,13 +58,14 @@ class PluginsList extends React.Component {
                 </div>
               </div>
             </Link>
-            <div className="plugins-list-container-title">
+            <div className="articles-list-container-title">
               <h1>{post.title}</h1>
-              <div className="plugins-list-container-body">
+              <p>{post.author}</p>
+              <div className="articles-list-container-body">
                 <div dangerouslySetInnerHTML={{ __html: post.body }} /></div>
             </div>
           </div>
-          <div className="plugins-list-container-posts">
+          <div className="articles-list-container-posts">
             {this.renderPosts(route)}
           </div>
         </div>
@@ -73,4 +74,4 @@ class PluginsList extends React.Component {
   }
 }
 
-export default PluginsList;
+export default ArticlesList;
