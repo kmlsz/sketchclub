@@ -5,8 +5,8 @@ import Helmet from 'react-helmet';
 
 import Post from '../components/Post';
 import Page from '../components/Page';
-import ArticlesList from '../components/ArticlesList';
-import PluginsList from '../components/PluginsList';
+import ArticlesList from '../containers/ArticlesList';
+import PluginsList from '../containers/PluginsList';
 
 import { config } from 'config';
 import '../styles/markdown-styles.css';
@@ -31,6 +31,8 @@ class MarkdownWrapper extends React.Component {
       template = <PluginsList {...this.props} />;
     } else if (layout === 'plugin') {
       template = <Page {...this.props} />;
+    } else if (layout === 'premium') {
+      template = <Plugin {...this.props} />;
     } else {
       template = <ArticlesList {...this.props} />;
     }

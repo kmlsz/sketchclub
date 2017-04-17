@@ -4,6 +4,7 @@ date: "2017-03-22"
 layout: post
 path: "/zombie-ipsum/"
 category: "Welcome"
+author: "Test"
 description: "Zombies reversus ab inferno, nam malum cerebro."
 ---
 

@@ -41,6 +41,9 @@ export default class Index extends Component {
               <li>
                 <Link to={prefixLink('/plugins/')}>Plugins</Link>
               </li>
+              <li>
+                <Link to={prefixLink('/premium/')}>Premium</Link>
+              </li>
             </ul>
           </div>
         </div>

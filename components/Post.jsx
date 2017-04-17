@@ -40,6 +40,7 @@ class Post extends React.Component {
 
             <div className="post-container-title">
               <h1>{post.title}</h1>
+              <p>{post.author}</p>
               <div className="post-container-body">
                 <div dangerouslySetInnerHTML={{ __html: post.body }} /></div>
             </div>
