@@ -6,11 +6,12 @@
 @import './base/_logo.css';
 
 /* containers */
-@import './containers/_post.css';
-@import './containers/_page.css';
 @import './containers/_articles-list.css';
-@import './containers/_article.css';
 @import './containers/_plugins-list.css';
-@import './containers/_plugin.css';
 
 /* components */
+@import './components/_globalNav.css';
+@import './components/_post.css';
+@import './components/_page.css';
+@import './components/_article.css';
+@import './components/_plugin.css';

@@ -6,6 +6,8 @@ import moment from 'moment';
 import _ from 'lodash';
 
 import Plugin from '../components/Plugin';
+import Post from '../components/Post';
+import GlobalNav from '../components/GlobalNav';
 
 class PluginsList extends React.Component {
   componentWillMount() {
@@ -27,7 +29,7 @@ class PluginsList extends React.Component {
   renderPosts(route) {
     const posts = [];
     route.pages.map((page) => {
-      if (page.data.layout === 'plugin') {
+      if (page.data.category === 'plugin') {
         posts.push(page);
       }
     });
@@ -46,18 +48,9 @@ class PluginsList extends React.Component {
 
     return (
       <div>
+        <GlobalNav />
         <div className="plugins-list">
           <div className="plugins-list-container">
-            <Link to={prefixLink('/')}>
-              <div className="logo fixed">
-                <div className="logo-outerCircle">
-                  <div className="logo-outerCircle-triangle">
-                    <div className="logo-outerCircle-triangle-square">
-                      <div className="logo-outerCircle-triangle-square-innerCircle" /></div>
-                  </div>
-                </div>
-              </div>
-            </Link>
             <div className="plugins-list-container-title">
               <h1>{post.title}</h1>
               <div className="plugins-list-container-body">
