@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
+import GlobalNav from '../components/GlobalNav';
+
 class Post extends React.Component {
   componentWillMount() {
     if (typeof window !== 'undefined') {
@@ -25,19 +27,9 @@ class Post extends React.Component {
 
     return (
       <div>
+        <GlobalNav / >
         <div className="post">
           <div className="post-container">
-            <Link to={prefixLink('/articles/')}>
-              <div className="logo fixed">
-                <div className="logo-outerCircle">
-                  <div className="logo-outerCircle-triangle">
-                    <div className="logo-outerCircle-triangle-square">
-                      <div className="logo-outerCircle-triangle-square-innerCircle" /></div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
             <div className="post-container-title">
               <h1>{post.title}</h1>
               <p>{post.author}</p>
