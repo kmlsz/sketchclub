@@ -40,8 +40,7 @@ class MarkdownWrapper extends React.Component {
       default:
         template = <ArticlesList {...this.props} />;
     }
-
-
+    //old method 
     // if (layout === 'post') {
     //   template = <Post {...this.props} />;
     // } else if (layout === 'page') {
