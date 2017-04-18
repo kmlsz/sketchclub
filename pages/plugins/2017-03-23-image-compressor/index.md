@@ -1,9 +1,9 @@
 ---
 title: "Sketch Image Compressor"
 date: "2017-03-19"
-layout: plugin
+layout: post
 path: "/plugins/sketch-image-compressor/"
-category: "Plugins"
+category: "plugin"
 author: "Joe doe"
 description: "Automatic lossless compression for your bitmap assets, right when you export them."
 ---

@@ -1,0 +1,27 @@
+.global-nav {
+  lost-column: 1/1 flex;
+  lost-align: center;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: whitesmoke;
+  height: 60px;
+  box-shadow: 2px 0 8px #333;
+  &-group {
+    display: flex;
+    margin: 0 1em;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    list-style-type: none;
+    &-item {
+      // padding: 10px;
+      height: 40px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+  }
+  }
+}

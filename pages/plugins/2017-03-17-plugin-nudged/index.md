@@ -1,9 +1,9 @@
 ---
 title: "Nudged"
 date: "2017-02-17"
-layout: plugin
+layout: post
 path: "/plugins/nudged/"
-category: "Plugins"
+category: "plugin"
 img: http://daynin.github.io/clojurescript-presentation/img/react-logo.png
 description: "Nudged is a Sketch plugin that allows you to quickly and easily edit your Sketch’s…"
 ---

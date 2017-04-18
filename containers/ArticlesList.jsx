@@ -6,6 +6,7 @@ import moment from 'moment';
 import _ from 'lodash';
 
 import Article from '../components/Article';
+import GlobalNav from '../components/GlobalNav';
 
 class ArticlesList extends React.Component {
   componentWillMount() {
@@ -36,6 +37,8 @@ class ArticlesList extends React.Component {
       return new moment(o.data.date);
     }).reverse();
 
+    const postsCount = posts.length
+
     return ordered.map((orderedPost) => {
       return <Article key={uuid()} data={orderedPost.data} />;
     });
@@ -46,18 +49,9 @@ class ArticlesList extends React.Component {
 
     return (
       <div>
+        <GlobalNav />
         <div className="articles-list">
           <div className="articles-list-container">
-            <Link to={prefixLink('/')}>
-              <div className="logo fixed">
-                <div className="logo-outerCircle">
-                  <div className="logo-outerCircle-triangle">
-                    <div className="logo-outerCircle-triangle-square">
-                      <div className="logo-outerCircle-triangle-square-innerCircle" /></div>
-                  </div>
-                </div>
-              </div>
-            </Link>
             <div className="articles-list-container-title">
               <h1>{post.title}</h1>
               <p>{post.author}</p>

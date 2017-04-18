@@ -23,19 +23,37 @@ class MarkdownWrapper extends React.Component {
     // means that this md file will be rendered using pluginslist component, similarly if I want the
     // the plugin page to be rendered as page after clicking on it in the plugin directory I need to set
     // this rule in here to layout === 'plugin' so that page component is used to render it
-    if (layout === 'post') {
-      template = <Post {...this.props} />;
-    } else if (layout === 'page') {
-      template = <Page {...this.props} />;
-    } else if (layout === 'plugins') {
-      template = <PluginsList {...this.props} />;
-    } else if (layout === 'plugin') {
-      template = <Page {...this.props} />;
-    } else if (layout === 'premium') {
-      template = <Plugin {...this.props} />;
-    } else {
-      template = <ArticlesList {...this.props} />;
+    switch (layout) {
+      case 'post':
+        template = <Post {...this.props} />;
+        break;
+      case 'page':
+      case 'plugin':
+        template = <Page {...this.props} />;
+        break;
+      case 'plugins':
+        template = <PluginsList {...this.props} />;
+        break;
+      case 'premium':
+        template = <Post {...this.props} />;
+        break;
+      default:
+        template = <ArticlesList {...this.props} />;
     }
+    //old method 
+    // if (layout === 'post') {
+    //   template = <Post {...this.props} />;
+    // } else if (layout === 'page') {
+    //   template = <Page {...this.props} />;
+    // } else if (layout === 'plugins') {
+    //   template = <PluginsList {...this.props} />;
+    // } else if (layout === 'plugin') {
+    //   template = <Page {...this.props} />;
+    // } else if (layout === 'premium') {
+    //   template = <Page {...this.props} />;
+    // } else {
+    //   template = <ArticlesList {...this.props} />;
+    // }
 
     return (
      <div>
