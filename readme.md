@@ -1,17 +1,6 @@
-<p align="center"><img width="125" src="https://cl.ly/jmH1/alchemy-logo.png"></p>
+<h1 align="center">Sketchlub</h1>
 
-<h1 align="center">Alchemy</h1>
-
-<p align="center">A <a href="https://github.com/gatsbyjs/gatsby" tagret="_blank">Gatsby</a> starter with <a href="http://postcss.org" target="_blank">PostCSS</a> powers ✨🔮</p>
-
-## What is Alchemy?
-Alchemy is a Gatsby starter with PostCSS powers, you get the power of Gatsby and the power of PostCSS.
-
-This starter is intended to get you up and running with your first Gatsby site.
-
-Alchemy was designed to provide easy and quick customization, this starter is not a theme, is a boilerplate.
-
-Use this boilerplate to design your own site from 0.
+<p align="center">A directory of Sketch app resources. A <a href="https://github.com/gatsbyjs/gatsby" tagret="_blank">Gatsby</a> fork with <a href="http://postcss.org" target="_blank">PostCSS</a> powers ✨🔮</p>
 
 ## Features
 - Uses PostCSS
@@ -45,13 +34,6 @@ Use this boilerplate to design your own site from 0.
 - **styles/markdown-styles.css** - the styles used for your code blocks (highlight.js)
 - **gatsby-node.js** - webpack configuration overrides
 - **html.jsx** - the main html tree
-
-## Installing
-`gatsby new my-site https://github.com/bntzio/gatsby-starter-alchemy`
-
-`cd my-site`
-
-`npm run develop`
 
 ## License
 MIT License
