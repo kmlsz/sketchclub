@@ -5,12 +5,12 @@
   flex-direction: column;
   height: 320px;
   text-align: center;
-  background: white;
-  color: black;
+  background: ghostwhite;
+  color: var(--darkColor);
   border-radius: 2.7px;
   margin-bottom: 20px;
   padding: 0 25px;
-  box-shadow: 1px 0 4px 1px #333;
+  border: solid 1px #e6e6e6;
 
   @media (--tablet) {
     lost-column: 1/2 2 20px;

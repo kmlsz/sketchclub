@@ -3,6 +3,7 @@ const lost = require('lost');
 const cssnext = require('postcss-cssnext');
 const cssnested = require('postcss-nested');
 const atImport = require('postcss-import');
+const conditionals = require('postcss-conditionals');
 
 exports.modifyWebpackConfig = function (config) {
   config.merge({
@@ -11,6 +12,7 @@ exports.modifyWebpackConfig = function (config) {
       cssnested,
       lost(),
       rucksack(),
+      conditionals(),
       cssnext({
         browsers: ['>1%', 'last 2 versions']
       }),
