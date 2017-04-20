@@ -6,7 +6,7 @@
   display: flex;
   background: var(--orange);
   height: 60px;
-  box-shadow: 1px 0 4px color(var(--orange) alpha(-20%));
+  box-shadow: 1px 0 4px black;
   &-group {
     display: flex;
     margin: 0 1em;
