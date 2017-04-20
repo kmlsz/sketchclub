@@ -5,9 +5,10 @@
   flex-direction: column;
   height: 320px;
   text-align: center;
-  background: white;
-  color: black;
-  border-radius: 2.7px;
+  background: ghostwhite;
+  color: var(--darkColor);
+  border-radius: 3.7px;
+  border: solid 1px #e6e6e6;
   margin-bottom: 20px;
   padding: 0 25px;
 
@@ -39,7 +40,7 @@
     p {
       margin: 0;
       font-size: responsive 13px 16px;
-      color: #333333;
+      color: var(--darkColor);
     }
   }
 

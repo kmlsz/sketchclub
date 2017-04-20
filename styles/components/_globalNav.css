@@ -4,9 +4,9 @@
   position: fixed;
   top: 0;
   display: flex;
-  background: whitesmoke;
+  background: var(--orange);
   height: 60px;
-  box-shadow: 2px 0 8px #333;
+  box-shadow: 1px 0 4px color(var(--orange) alpha(-20%));
   &-group {
     display: flex;
     margin: 0 1em;
@@ -19,8 +19,9 @@
       // padding: 10px;
       height: 40px;
       a {
-        color: black;
+        color: white;
         text-decoration: none;
+        font-weight: regular;
       }
   }
   }

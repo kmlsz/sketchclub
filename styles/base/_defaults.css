@@ -1,36 +1,47 @@
 @lost flexbox flex;
 
+html {
+  background: white;
+}
+.wrapper {
+  background: white;
+}
+
 body {
   background-color: var(--bgColor);
-  color: white;
-  font-size: responsive 14px 18px;
+  color: var(--darkColor);
+  font-size: responsive 16px 20px;
 }
 
 a {
-  color: white;
+  color: var(--darkColor);
 
   &:hover {
-    color: grey;
+    color: var(--darkColor);
   }
   &:visited {
-    color: indigo;
+    color: var(--darkColor);
   }
   &:focus {
-    color: blue;
+    color: var(--darkColor);
   }
 }
 
 .main {
   lost-column: 1/1;
   margin-top: 210px;
-  font-size: responsive 14px 21px;
+  font-size: responsive 16px 21px;
 
   &-container {
     text-align: center;
 
-    &-title {}
+    &-title {
+      color: var(--darkColor);
+    }
 
-    &-subtitle {}
+    &-subtitle {
+      color: var(--darkColor);
+    }
 
     &-links {
       & > ul {
@@ -42,7 +53,7 @@ a {
           padding: 6px 0;
 
           & > a {
-            color: white;
+            color: var(--darkColor);
           }
         }
       }
@@ -54,14 +65,15 @@ a {
     lost-align: right;
     position: absolute;
     bottom: 5px;
+    background: white;
     right: 35px;
 
     & > p {
       font-size: 12px;
-      color: white;
+      color: var(--darkColor);
 
       & > a {
-        color: white;
+        color: var(--darkColor);
         text-decoration: none;
       }
     }
