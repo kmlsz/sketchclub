@@ -7,22 +7,21 @@ import CodePlugin from 'typography-plugin-code';
 const options = {
   googleFonts: [
     {
-      name: 'Roboto Slab',
+      name: 'Roboto',
       styles: [
-        '700',
+        '400',
       ],
     },
     {
-      name: 'Arvo',
+      name: 'Rubik',
       styles: [
         '400',
-        '400i',
         '700',
       ],
     },
   ],
-  headerFontFamily: ['Roboto Slab', 'serif'],
-  bodyFontFamily: ['Arvo', 'sans-serif'],
+  headerFontFamily: ['Roboto', 'serif'],
+  bodyFontFamily: ['Rubik', 'sans-serif'],
   baseFontSize: '18px',
   baseLineHeight: 1.65,
   scaleRatio: 2.25,
