@@ -16,6 +16,7 @@ const options = {
       name: 'Rubik',
       styles: [
         '400',
+        '400i',
         '700',
       ],
     },
