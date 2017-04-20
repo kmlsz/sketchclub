@@ -4,9 +4,9 @@
   position: fixed;
   top: 0;
   display: flex;
-  background: orange;
+  background: var(--orange);
   height: 60px;
-  box-shadow: 1px 0 4px black;
+  box-shadow: 1px 0 4px var(--orange);
   &-group {
     display: flex;
     margin: 0 1em;
