@@ -1,0 +1,38 @@
+.pill-nav {
+  lost-column: 1/1 flex;
+  lost-align: center;
+  position: fixed;
+  top: 120px;
+  background: white;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 1px 0 4px grey;
+  &-group {
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    margin: 0;
+    width: 980px;
+    list-style-type: none;
+    &-item {
+      display: flex;
+      align-content: center;
+      margin-right: 8px;
+      margin-bottom: 0;
+      a {
+        color: #8F99A8;
+        text-decoration: none;
+        padding: 6px 16px;
+        border-radius: 4px;
+        background-color: #DEE0E7;
+        &:hover {
+          background-color: var(--theme);
+          color: white;
+        }
+      }
+    }
+  }
+}
