@@ -1,7 +1,7 @@
 :root {
   --bgColor: white;
   --darkColor: #192c3d;
-  --orange: #F7653B;
+  --theme: #2868DE;
   --logoOuter: #a0740a;
   --logoTriangle: var(--logoOuter);
   --logoSquareInner: #886309;
