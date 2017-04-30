@@ -6,7 +6,8 @@ import moment from 'moment';
 import _ from 'lodash';
 
 import Article from '../components/Article';
-import GlobalNav from '../components/GlobalNav';
+import Header from '../components/Header';
+import PillNav from '../components/PillNav';
 
 class ArticlesList extends React.Component {
   componentWillMount() {
@@ -49,7 +50,8 @@ class ArticlesList extends React.Component {
 
     return (
       <div>
-        <GlobalNav />
+        <Header />
+        <PillNav />
         <div className="articles-list">
           <div className="articles-list-container">
             <div className="articles-list-container-title">

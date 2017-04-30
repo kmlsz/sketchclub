@@ -10,8 +10,10 @@
 @import './containers/_plugins-list.css';
 
 /* components */
-@import './components/_globalNav.css';
 @import './components/_post.css';
 @import './components/_page.css';
 @import './components/_article.css';
 @import './components/_plugin.css';
+@import './components/_globalNav.css';
+@import './components/_pillNav.css';
+@import './components/_header.css';

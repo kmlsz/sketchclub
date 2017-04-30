@@ -1,6 +1,7 @@
 ---
 title: "Batman Ipsum"
 date: "2017-03-29"
+author: "Marian Look"
 layout: post
 path: "/batman-ipsum/"
 category: "Welcome"

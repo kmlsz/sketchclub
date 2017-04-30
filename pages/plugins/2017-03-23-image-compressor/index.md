@@ -1,7 +1,7 @@
 ---
 title: "Sketch Image Compressor"
 date: "2017-03-19"
-layout: post
+layout: page
 path: "/plugins/sketch-image-compressor/"
 category: "plugin"
 author: "Joe doe"

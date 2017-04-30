@@ -1,6 +1,7 @@
 ---
 title: "Cupcake Ipsum"
 date: "2017-03-26"
+author: "Jest Zimno"
 layout: post
 path: "/cupcake-ipsum/"
 category: "Welcome"
