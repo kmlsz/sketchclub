@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import GlobalNav from './GlobalNav';
+import Header from './Header';
+import PillNav from './PillNav';
 
 class Page extends React.Component {
   render() {
@@ -10,7 +11,8 @@ class Page extends React.Component {
     
     return (
       <div>
-        <GlobalNav />
+        <Header />
+        <PillNav location={this.props.location.pathname} />
         <div className="page">
           <div className="page-container">
             <div className="page-container-title">
