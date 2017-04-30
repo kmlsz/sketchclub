@@ -7,9 +7,9 @@ import CodePlugin from 'typography-plugin-code';
 const options = {
   googleFonts: [
     {
-      name: 'Roboto',
+      name: 'Rubik',
       styles: [
-        '400',
+        '700',
       ],
     },
     {
@@ -21,7 +21,7 @@ const options = {
       ],
     },
   ],
-  headerFontFamily: ['Roboto', 'serif'],
+  headerFontFamily: ['Rubik', 'sans-serif'],
   bodyFontFamily: ['Rubik', 'sans-serif'],
   baseFontSize: '18px',
   baseLineHeight: 1.65,

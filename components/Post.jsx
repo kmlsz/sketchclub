@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
-import GlobalNav from '../components/GlobalNav';
+import Header from './Header';
+import PillNav from './PillNav';
 
 class Post extends React.Component {
   componentWillMount() {
@@ -27,7 +28,8 @@ class Post extends React.Component {
 
     return (
       <div>
-        <GlobalNav / >
+        <Header />
+        <PillNav />
         <div className="post">
           <div className="post-container">
             <div className="post-container-title">

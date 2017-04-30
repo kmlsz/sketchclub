@@ -27,9 +27,9 @@ a {
   }
 }
 
-.main {
+.feed {
   lost-column: 1/1;
-  margin-top: 210px;
+  margin-top: 240px;
   font-size: responsive 16px 21px;
 
   &-container {

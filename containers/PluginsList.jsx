@@ -7,7 +7,8 @@ import _ from 'lodash';
 
 import Plugin from '../components/Plugin';
 import Post from '../components/Post';
-import GlobalNav from '../components/GlobalNav';
+import Header from '../components/Header';
+import PillNav from '../components/PillNav';
 
 class PluginsList extends React.Component {
   componentWillMount() {
@@ -48,7 +49,8 @@ class PluginsList extends React.Component {
 
     return (
       <div>
-        <GlobalNav />
+        <Header />
+        <PillNav />
         <div className="plugins-list">
           <div className="plugins-list-container">
             <div className="plugins-list-container-title">
