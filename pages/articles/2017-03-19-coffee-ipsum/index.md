@@ -1,6 +1,7 @@
 ---
 title: "Coffee Ipsum"
 date: "2017-03-19"
+author: "Wiosno przyjdz"
 layout: post
 path: "/coffee-ipsum/"
 category: "Welcome"

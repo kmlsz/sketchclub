@@ -2,6 +2,7 @@
 title: "Cat Ipsum"
 date: "2017-03-17"
 layout: post
+author: "John Smith"
 path: "/cat-ipsum/"
 category: "Welcome"
 description: "Cat ipsum dolor sit amet, russian blue cheetah yet norwegian forest."

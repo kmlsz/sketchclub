@@ -1,7 +1,7 @@
 ---
 title: "Nudged"
 date: "2017-02-17"
-layout: post
+layout: page
 path: "/plugins/nudged/"
 category: "plugin"
 img: http://daynin.github.io/clojurescript-presentation/img/react-logo.png
